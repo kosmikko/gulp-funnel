@@ -1,0 +1,35 @@
+{
+  "name": "gulp-file-list",
+  "version": "0.1.0",
+  "description": "Join streams into an array",
+  "license": "MIT",
+  "repository": "mikkolehtinen/gulp-funnel",
+  "author": {
+    "name": "Mikko Lehtinen",
+    "email": "me@kosmikko.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin",
+    "list",
+    "files",
+    "array",
+    "join"
+  ],
+  "dependencies": {
+    "gulp-util": "~2.2.0",
+    "through2": "~0.4.0",
+    "lodash": "~2.4.1"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
