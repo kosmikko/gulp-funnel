@@ -8,7 +8,7 @@ module.exports = function(options) {
   options = _.extend({
     destination: 'index.html',
     property: 'files'
-  }, options || {});
+  }, options || {});
 
   var list = [];
   var firstFile;
