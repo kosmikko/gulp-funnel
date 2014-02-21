@@ -14,7 +14,7 @@ gulp.task('index', function() {
     .pipe(funnel())
     .pipe(nunjucks({defaultTemplate: 'index'}))
 });
-´´
+```
 
 ## License
 
