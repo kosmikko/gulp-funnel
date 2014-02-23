@@ -16,6 +16,20 @@ gulp.task('index', function() {
 });
 ```
 
+## Options
+
+### destination
+
+Destination filename, index.html by default
+
+### property
+
+Destination property of the File, where to store the list of files. 'files' by default.
+
+### sort
+
+Sort filelist, -1 for sorting descending, 1 ascending.
+
 ## License
 
 MIT © [Mikko Lehtinen](https://twitter.com/kosmikko)

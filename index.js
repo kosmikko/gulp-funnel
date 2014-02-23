@@ -7,11 +7,20 @@ var through = require('through2');
 module.exports = function(options) {
   options = _.extend({
     destination: 'index.html',
-    property: 'files'
+    property: 'files',
+    sort: -1
   }, options || {});
 
   var list = [];
   var firstFile;
+
+  function sortList() {
+    function comparator(a, b) {
+      if (options.sort === -1) return a.relative < b.relative;
+      return a.relative > b.relative;
+    }
+    return list.sort(comparator);
+  }
 
   function processFile(file, enc, cb) {
     if (file.isNull()) {
@@ -37,8 +46,9 @@ module.exports = function(options) {
       path: joinedPath,
       contents: new Buffer('empty-on-purpose')
     });
+
     // set the list of files as property of File
-    joinedFile[options.property] = list;
+    joinedFile[options.property] = sortList();
     this.push(joinedFile);
     cb();
   }

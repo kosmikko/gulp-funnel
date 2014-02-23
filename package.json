@@ -1,6 +1,6 @@
 {
-  "name": "gulp-file-list",
-  "version": "0.1.0",
+  "name": "gulp-funnel",
+  "version": "0.1.1",
   "description": "Join streams into an array",
   "license": "MIT",
   "repository": "mikkolehtinen/gulp-funnel",
